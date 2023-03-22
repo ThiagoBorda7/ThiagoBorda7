@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital@0;1&display=swap');
+
+/*------------------------------RESETEO-----------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------NAV BAR-----------------------------------*/
+
+nav ul{
+    list-style-type: none;
+}
+
+.links__nav{
+    text-decoration: none;
+}
+
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover{
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.fondo__inicio{
+    background: url(../images/fondoinicio.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+
+
+/*----------------------------MAIN / SECTION---------------------------------*/
+
+.container__main{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    
+}
+
+/*---------------------CONTENERDORES DIV------------------------------*/
+
+.right__main, .left__main{
+    background-color: #474b4e;
+    width: 40%;
+    height: 200vh;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px #333;
+
+}
+
+/*---------------------TITULOS DE LOS TRES DIV-------------------------*/
+
+.historia__libros{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #333;
+    
+}
+
+/*---------------------PARRAFO BIOFRAFIA-------------------------------*/
+
+.paragraphs__main{
+    color: white;
+    font-size: 16px;
+    text-align: start;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+/*--------------------CONTENEDOR IMAGEN AUTORA-------------------------*/
+
+.autora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------IMAGEN AUTORA-----------------------------------*/
+
+.imagen__autora{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px #333;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    text-align: start;
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin: 30px;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.titulo-footer{
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+.titulo-footer:hover{
+    color: lightgray;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.logo-footer a img:hover{
+    border: 2px solid darkgrey;
+    border-radius: 15px;
+}
+
+
+/* ---------------------------------PRODUCTOS-------------------------------------------------*/
+
+.titulo__mano{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+}
+
+.titulo__serie{
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.boton__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container__fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn{
+    margin: 50px 0;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn:hover{
+    background-color: #1a2537;
+}
+
+/*-----------------------------GALERIA GRID-------------------------------------*/
+
+.galeria__libros{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.libros__mano{
+    position: relative;
+}
+
+.libros__mano:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.img__libros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.titulo__libro{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: #333;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+
+.libros__mano:nth-child(7){
+    grid-column: 2 / 3;
+}
+
+
+/*----------------------------FLEX ----------------------------------------*/
+
+.coleccion__completa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.parrafos{
+    border: 5px double #333;
+    margin: 40px;
+}
+
+.serie__libros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 50px;
+}
+
+.serie__libros:hover{
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+
+/*------------------------------------LOG IN / REGISTER----------------------------------------*/
+
+.body__login{
+    margin: 0;
+    padding: 0;
+    background: url(../images/fondodos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor__form{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background-color: white;
+    margin-top: 15;
+    padding: 3px;
+}
+
+.text, .password, .email{
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+.contenedor__input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background-color: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: cadetblue;
+}
+
+.parrafo__input{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.link:hover{
+    color: cadetblue;
+}
+
+
+/*-------------------------------RESPONSIVE INICIO------------------------------------*/
+
+@media (max-width:900px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    nav ul li a:hover{
+        background-color: #1a2537;
+        padding: 10px 15px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+/*-------------------------------------RESPONSIVE LOG IN---------------------------------*/
+
+
+@media(min-width:768px){
+
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+@media (min-width: 700px){
+    .formulario{
+        margin-top: 150px;
+    }
+}
