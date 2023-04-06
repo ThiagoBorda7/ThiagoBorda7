@@ -1,0 +1,588 @@
+@import "generales";
+@import "nav";
+@import "inicio";
+@import "footer";
+
+
+/*----------------------------------PARRAFOS EN GENERAL---------------------------------------------------------------------*/
+p {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: black;
+    text-align: start;
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin: 30px;
+}
+/* ------------------------------------------PRODUCTOS-------------------------------------------------*/
+
+.titulo__mano{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.titulo__serie{
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.container__fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn{
+    margin: 50px 0;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn:hover{
+    background-color: #1a2537;
+}
+
+/*-------------------------------------------------GALERIA GRID-------------------------------------------------------*/
+
+.galeria__libros{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
+    gap: 70px;
+    justify-content: center;
+}
+
+
+.libros__mano:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.img__libros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.titulo__libro{
+    color: white;
+    background: #333;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+
+.libros__mano:nth-child(7){
+    grid-column: 2 / 3;
+}
+
+
+/*---------------------------------------------------FLEX--------------------------------------------------------------*/
+
+.coleccion__completa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.parrafos{
+    border: 5px double #333;
+    margin: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.descripcion{
+    margin: 100px 0;
+}
+.serie__libros{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.serie__libros:hover{
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------NOSOTROS--------------------------------------------------*/
+
+.container__pf{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.container__pf h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.acordeon{
+    background-color: white;
+}
+
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.acordeon label:hover{
+    background-color: #2e2e2e;
+}
+
+.acordeon .contenido__acordeon{
+    padding: 0;
+    margin: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn__acordeon:checked ~ .contenido__acordeon{
+    max-height: 600px;
+    padding: 15px 0;
+}
+
+.btn__acordeon{
+    display: none;
+}
+
+/*------------------------------------------------------------------CONTACTO-----------------------------------------------------------------------*/
+
+.body__contacto{
+    background: url(../images/fondocont.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container__contacto .form{
+    width: 90%;
+    background-color: #1c1c1c;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+.container__contacto .form .header__form .titulo__form{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.container__contacto .form .label__form{
+    display: block;
+    color: white;
+    font-size: 16px;
+}
+
+.container__contacto .form .input__form, .textarea__form{
+    background-color: #2e2e2e;
+    border: none;
+    border-bottom: 2px solid #999;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container__contacto .form .textarea__form{
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.container__contacto .form .btn__submit{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #999;
+    font-size: 16px;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+    transition: all .5s ease;
+}
+
+.container__contacto .form .btn__submit:hover{
+    background-color: #aaa;
+}
+
+/*----------------------------------------------------LOG IN / REGISTER---------------------------------------------------*/
+
+.body__login{
+    background: url(../images/fondodos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor__form{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background-color: white;
+    margin-top: 15;
+    padding: 3px;
+}
+
+.formulario h1{
+    text-align: center;
+    font-size: 40px;
+    color: #1a2537;
+}
+
+.text, .password, .email{
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+.contenedor__input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background-color: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: cadetblue;
+}
+
+.parrafo__input{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.link:hover{
+    color: cadetblue;
+}
+
+/*-----------------------------------------------------------RESPONSIVE INICIO-----------------------------------------------------*/
+
+@media (max-width:900px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:800px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    .enlace{
+        padding-left: 60px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    nav ul li a:hover{
+        background-color: #1a2537;
+        padding: 10px 15px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*-----------------------------------RESPONSIVE PRODUCTOS----------------------------------*/
+
+@media screen and (max-width:1100px){
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 500px;
+        gap: 100px;
+    }
+
+    .libros__mano:nth-child(7){
+        grid-column: 1 / 2;
+    }
+
+    .coleccion__completa{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripcion{
+        margin: 90px 0;
+    }
+
+    .serie__libros{
+        width: 50%;
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width:900px){
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 500px;
+        gap: 100px;
+    }
+
+    .libros__mano:nth-child(7){
+        grid-column: 1 / 2;
+    }
+
+    .serie__libros{
+        width: 400px;
+        margin: 40px 20px;
+    }
+
+    .containerProductos{
+        margin-top: 80px;
+    }
+
+}
+
+
+@media screen and (max-width:800px){
+
+    .titulo__mano{
+        font-size: 40px;
+    }
+
+    .titulo__serie{
+        font-size: 40px;
+        margin-top: 150px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 1fr;
+        gap: 90px;
+    }
+
+    .libros__mano:nth-child(7){
+        grid-column: 1 / 2;
+    }
+
+    .coleccion__completa{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serie__libros{
+        width: 60%;
+    }
+
+    .btn{
+        padding: 30px 70px;
+    }
+
+    .parrafos{
+        border: 7px double #333;
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .titulo__mano{
+        font-size: 30px;
+    }
+
+    .titulo__serie{
+        font-size: 30px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: 350px;
+        gap: 120px;
+    }
+
+    .serie__libros{
+        width: 75%;
+    }
+
+    .btn{
+        padding: 20px 70px;
+    }
+
+}
+
+@media (max-width: 390px){
+
+    .titulo__mano{
+        font-size: 25px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: 300px;
+    }
+
+    .titulo__serie{
+        font-size: 25px;
+    }
+
+    .btn{
+        padding: 20px 60px;
+    }
+
+}
+
+/*-------------------------------------RESPONSIVE NOSOTROS-------------------------------*/
+
+@media (max-width: 900px){
+
+    .container__pf{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .container__pf{
+        width: 90%;
+    }
+
+    .container__pf{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:390px){
+
+    .container__pf{
+        width: 90%;
+    }
+
+    .container__pf h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .acordeon label{
+        font-size: 18px;
+    }
+
+    .contenido__acordeon p{
+        font-size: 16px;
+    }
+
+}
+
+/*-------------------------------------RESPONSIVE LOG IN---------------------------------*/
+
+@media (min-width:768px){
+
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .formulario{
+        margin: auto;
+        width: 300px;
+        margin-top: 150px;
+        border-radius: 3%;
+    }
+
+    .formulario h1{
+    font-size: 25px;
+    }
+
+    .text, .password, .email{
+    font-size: 16px;
+    width: 60%;
+    }
+
+    .button{
+        padding: 10px 15px;
+    }
+
+    .parrafo__input{
+        font-size: 16px;
+    }
+
+}

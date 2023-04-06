@@ -1,0 +1,29 @@
+/*-------------------------------------------------FOOTER-------------------------------------------------------------*/
+@mixin container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 20vh;
+}
+
+
+footer{
+    background-color: black;
+    height: 20vh;
+    margin-top: 150px;
+
+    .container{
+        @include container;
+
+        .img__footer{
+            width: 50px;
+            height: 50px;
+
+                &:hover{
+                    border: 2px solid darkgrey;
+                    border-radius: 15px;
+                }
+        }
+    }
+}
