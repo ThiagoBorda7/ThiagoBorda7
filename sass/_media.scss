@@ -1,0 +1,277 @@
+/*----------------------------------------------------------RESPONSIVE INICIO-----------------------------------------------------*/
+
+@media (max-width:900px){
+
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:800px){
+
+    nav{
+        #check:checked ~ ul {
+            left: 0;
+        }
+
+        .checkbtn{
+            display: block;
+        }
+
+        .enlace{
+            padding-left: 60px;
+        }
+
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #333;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+    
+            li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+    
+                a{
+                    font-size: 20px;
+    
+                    &:hover{
+                        background-color: #1a2537;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------------RESPONSIVE PRODUCTOS----------------------------------*/
+
+@media screen and (max-width:1100px){
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 500px;
+        gap: 100px;
+
+        .libros__mano:nth-child(7){
+            grid-column: 1 / 2;
+        }
+    
+    }
+
+    .descripcion{
+        margin: 90px 0;
+
+        .coleccion__completa{
+            flex-direction: column;
+            align-items: center;
+
+            .serie__libros{
+                width: 50%;
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 500px;
+        gap: 100px;
+
+        .libros__mano:nth-child(7){
+            grid-column: 1 / 2;
+        }
+    }
+
+    .serie__libros{
+        width: 400px;
+        margin: 40px 20px;
+    }
+}
+
+
+@media screen and (max-width:800px){
+
+    .titulo__mano{
+        font-size: 40px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 1fr;
+        gap: 90px;
+
+        .libros__mano:nth-child(7){
+            grid-column: 1 / 2;
+        }
+    }
+
+    .titulo__serie{
+        font-size: 40px;
+        margin-top: 150px;
+    }
+
+    .parrafos{
+        border: 7px double #333;
+        font-size: 24px;
+    }
+
+    .coleccion__completa{
+        flex-direction: column;
+        align-items: center;
+
+        .serie__libros{
+            width: 60%;
+        }
+    
+    }
+
+    .btn{
+        padding: 30px 70px;
+    }
+}
+
+@media (max-width: 767px){
+
+    .titulo__mano{
+        font-size: 30px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: 350px;
+        gap: 120px;
+    }
+
+    .titulo__serie{
+        font-size: 30px;
+    }
+
+    .serie__libros{
+        width: 75%;
+    }
+
+    .btn{
+        padding: 20px 70px;
+    }
+}
+
+@media (max-width: 390px){
+
+    .titulo__mano{
+        font-size: 30px;
+    }
+
+    .galeria__libros{
+        grid-template-columns: 300px;
+    }
+
+    .titulo__serie{
+        font-size: 25px;
+    }
+
+    .btn{
+        padding: 20px 60px;
+    }
+
+}
+
+/*-------------------------------------RESPONSIVE NOSOTROS-------------------------------*/
+
+@media (max-width: 900px){
+
+    .container__pf{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .container__pf{
+        width: 85%;
+        font-size: 30px;
+    }
+
+
+}
+
+@media (max-width:390px){
+
+    .container__pf{
+        width: 90%;
+
+        .container__pf h1{
+            font-size: 25px;
+            font-weight: bold;
+
+            .acordeon label{
+                font-size: 15px;
+            }
+
+            
+            .contenido__acordeon p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/*-------------------------------------RESPONSIVE LOG IN---------------------------------*/
+
+@media (min-width:768px){
+
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .formulario{
+        margin: auto;
+        width: 380px;
+        margin-top: 150px;
+        border-radius: 3%;
+
+        h1{
+            font-size: 25px;
+
+            .text, .password, .email{
+                font-size: 16px;
+                width: 60%;
+            }
+        }
+
+        .button{
+            padding: 10px 15px;
+        }
+
+        .parrafo__input{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:390px){
+
+    .formulario{
+        width: 350px;
+    }
+}

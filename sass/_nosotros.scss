@@ -1,0 +1,63 @@
+.container__pf{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 35px;
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+    .acordeon{
+        background-color: white;
+
+        .btn__acordeon{
+            display: none;
+
+            &:checked ~ .contenido__acordeon{
+                max-height: 600px;
+                padding: 15px 0;
+            }
+        }
+
+        label {
+            display: block;
+            padding: 20px;
+            font-size: 20px;
+            background-color: #1c1c1c;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 2px;
+
+            &:hover{
+                background-color: #2e2e2e;
+            }
+        }
+
+        
+        .contenido__acordeon{
+            padding: 0;
+            margin: 0 20px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 300ms ease;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
