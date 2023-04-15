@@ -1,6 +1,19 @@
 .fondo__inicio{
-    background: url(../images/fondoinicio.jpg) no-repeat;
+    background: linear-gradient(to right,rgb(0,0,0,.5),rgb(0,0,0,.5)),url(../images/fondoinicio.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .texto{
+        color: white;
+        text-align: center;
+
+        h1{
+            font-family: "Black Han Sans", sans-serif;
+        }
+    }
 }
