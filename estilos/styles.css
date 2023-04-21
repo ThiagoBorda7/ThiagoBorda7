@@ -12,14 +12,24 @@
 
 /*------------------------------NAV BAR-----------------------------------*/
 
-nav ul{
-    list-style-type: none;
-}
-
 nav{
     background-color: black;
     height: 100px;
     width: 100%;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 .enlace{
@@ -32,6 +42,7 @@ nav{
 }
 
 nav ul{
+    list-style-type: none;
     float: right;
     margin-right: 20px;
 }
@@ -58,19 +69,6 @@ nav ul li a:hover{
     padding: 10px 10px;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
 
 .texto{
     display: none;
@@ -791,7 +789,11 @@ footer{
 
 @media (max-width:320px){
     .acordeon .contenido__acordeon{
-        margin: 0;
+        margin: 0 5px;
+    }
+
+    .acordeon label{
+        padding: 10px;
     }
 
     .contenido__acordeon p{
